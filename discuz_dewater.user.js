@@ -48,3 +48,4 @@ function GM_wait() {
         add_js_file('bbs_dewater');
     }
 }
+
