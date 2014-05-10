@@ -14,7 +14,7 @@
 // @updateURL     http://userscripts.org/scripts/source/165947.meta.js
 // @resource      jquery http://code.jquery.com/jquery-latest.min.js
 // @resource      discuz_dewater https://raw.github.com/abbypan/discuz_dewater/master/discuz_dewater.js
-// @resource      bbs_dewater https://raw.github.com/abbypan/zhd_dewater/master/bbs_dewater.js
+// @resource      bbs_dewater https://raw.github.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // ==/UserScript==
 //
 // --------------------------------------------------------------------
