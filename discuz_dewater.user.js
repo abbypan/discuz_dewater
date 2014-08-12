@@ -10,9 +10,7 @@
 // @grant         GM_getResourceText
 // @include       *viewthread*
 // @include       */thread-*-*-1.html
-// @downloadURL   http://userscripts.org/scripts/source/165947.user.js
-// @updateURL     http://userscripts.org/scripts/source/165947.meta.js
-// @resource      jquery http://code.jquery.com/jquery-latest.min.js
+// @resource      jquery http://libs.baidu.com/jquery/2.0.0/jquery.min.js
 // @resource      discuz_dewater https://raw.github.com/abbypan/discuz_dewater/master/discuz_dewater.js
 // @resource      bbs_dewater https://raw.github.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // ==/UserScript==
