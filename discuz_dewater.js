@@ -5,7 +5,7 @@ function banner_path() {
 function extract_floor_info(bot) {
     var info = bot.parent();
     var re = new Object;
-    re["poster"] = info.find('div.authi a.xw1').text();
+    re["poster"] = info.find('div.authi').text();
     re["time"] = info.find('div.authi em').text().replace('发表于','');
     re["id"] = info.find('div.pi em').text().replace(/\D.*$/,'');
     re["content"] = info.find('td.t_f').html().
