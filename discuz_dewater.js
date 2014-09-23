@@ -4,8 +4,9 @@ function banner_path() {
 
 function extract_floor_info(bot) {
     var info = bot.parent();
+    //alert(info.text());
     var re = new Object;
-    re["poster"] = info.find('div.authi').text();
+    re["poster"] = info.find('div.authi').eq(0).text();
     re["time"] = info.find('div.authi em').text().replace('发表于','');
     re["id"] = info.find('div.pi em').text().replace(/\D.*$/,'');
     re["content"] = info.find('td.t_f').html().
@@ -17,8 +18,8 @@ function extract_floor_info(bot) {
 }
 
 function floor_path() {
-    //return 'table.plhin';
-    return 'div#postlist>div>table';
+    return 'div#postlist table.plhin';
+    //return 'div#postlist>div>table';
 }
 
 function page_charset() {
