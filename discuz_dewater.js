@@ -13,12 +13,13 @@ function extract_floor_info(bot) {
         replace(/<[^>]+style="display:none"[^>]*>[^<]+<[^>]+>/g, '').
         replace(/<[^>]+class="jammer"[^>]*>[^<]+<[^>]+>/g, '').
         replace(/<\/?font[^>]*>/g, '');
-    re["word_num"] = re["content"].replace('<[^>]+>','').length;
+    //re["word_num"] = re["content"].replace('<[^>]+>','').length;
+    
     return re;
 }
 
 function floor_path() {
-    return 'div#postlist table.plhin';
+    return 'div#postlist>div>table';
     //return 'div#postlist>div>table';
 }
 
