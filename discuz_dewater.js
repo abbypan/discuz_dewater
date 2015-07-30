@@ -4,29 +4,27 @@ function banner_path() {
 
 function extract_floor_info(bot) {
     var info = bot.parent();
-    //alert(info.text());
     var re = new Object;
     re["poster"] = info.find('div.authi').eq(0).text();
     re["time"] = info.find('div.authi em').text().replace('发表于','');
-    re["id"] = info.find('div.pi em').text().replace(/\D.*$/,'');
+    re["id"] = info.find('td.plc div.pi em').text().replace(/\D.*$/,'') || info.find('td.plc div.pi strong').text().replace(/\D.*$/,'');
     re["content"] = info.find('td.t_f').html().
         replace(/<[^>]+style="display:none"[^>]*>[^<]+<[^>]+>/g, '').
         replace(/<[^>]+class="jammer"[^>]*>[^<]+<[^>]+>/g, '').
         replace(/<\/?font[^>]*>/g, '');
-    //re["word_num"] = re["content"].replace('<[^>]+>','').length;
-    
+    //alert(re["id"] + re["time"] + re["poster"] + re["content"]);
     return re;
 }
 
 function floor_path() {
+    //return 'div#postlist table.plhin';
     return 'div#postlist>div>table';
-    //return 'div#postlist>div>table';
 }
 
 function page_charset() {
     var h = $('head').html();
-    var h_m = h.match(/.*charset=(.*?)".*/);
-    if(!h_m) return 'gb2312';
+    var h_m = h.match(/.*charset="(.*?)".*/);
+    if(!h_m || h_m[1]) return 'gbk';
     return h_m[1];
 }
 
