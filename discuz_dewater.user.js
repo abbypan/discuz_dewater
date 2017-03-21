@@ -11,8 +11,8 @@
 // @include       *viewthread*
 // @include       */thread-*-*-1.html
 // @resource      jquery http://code.jquery.com/jquery-latest.js
-// @resource      discuz_dewater https://raw.github.com/abbypan/discuz_dewater/master/discuz_dewater.js
-// @resource      bbs_dewater https://github.com/abbypan/bbs_dewater/raw/master/bbs_dewater.js
+// @resource      discuz_dewater https://raw.githubusercontent.com/abbypan/discuz_dewater/master/discuz_dewater.js
+// @resource      bbs_dewater https://raw.githubusercontent.com/abbypan/bbs_dewater/master/bbs_dewater.js
 // ==/UserScript==
 //
 // --------------------------------------------------------------------
