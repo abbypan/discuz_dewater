@@ -7,7 +7,7 @@ function extract_floor_info(bot) {
     var re = new Object;
     re["poster"] = info.find('div.authi').eq(0).text();
     re["time"] = info.find('div.authi em').text().replace('发表于','');
-    re["id"] = info.find('td.plc div.pi em').text().replace(/\D.*$/,'') || info.find('td.plc div.pi strong').text().replace(/\D.*$/,'');
+    re["id"] = info.find('table.plhin').attr('id').replace(/pid/,'') || info.find('td.plc div.pi em').text().replace(/\D.*$/,'') || info.find('td.plc div.pi strong').text().replace(/\D.*$/,'');
     re["content"] = info.find('td.t_f').html().
         replace(/<[^>]+style="display:none"[^>]*>[^<]+<[^>]+>/g, '').
         replace(/<[^>]+class="jammer"[^>]*>[^<]+<[^>]+>/g, '').
