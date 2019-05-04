@@ -17,8 +17,8 @@ function extract_floor_info(bot) {
 }
 
 function floor_path() {
-    //return 'div#postlist table.plhin';
-    return 'div#postlist>div>table';
+    return 'div#postlist table.plhin';
+    //return 'div#postlist>div>table.plhin';
 }
 
 function page_charset() {
